@@ -9,8 +9,15 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        'white': '#fff',
+        'black': '#000',
+        'base': '#fff6de',
+        'main-1': '#fd6161',
+        'main-2': '#88c54b',
+        'main-3': '#eea643',
+        'sub': '#603813',
+        'text-dark': '#2A2424',
+        'text-light': '#fff6de',
       },
       fontSize: {
         'headline-1': '2rem', // 32px
