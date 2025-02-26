@@ -16,6 +16,7 @@ const config: Config = {
         'main-2': '#88c54b',
         'main-3': '#eea643',
         'sub': '#603813',
+        'sub-2':'#DDD6CD',
         'text-dark': '#2A2424',
         'text-light': '#fff6de',
       },
