@@ -9,7 +9,7 @@ export default function QuestionBox(props: QuestionBoxProps){
     const className = 'pl-4 pr-4 pt-5 '
     return(
         <div className={className}>
-            <div className='text-text-dark text-body-2 font-bold break-all'>{props.question}</div>
+            <div className='text-text-dark text-body-2 font-bold break-all text-center'>{props.question}</div>
         </div>
     )
 
