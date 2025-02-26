@@ -1,13 +1,13 @@
 import { NextRequest, NextResponse } from 'next/server';
 
-const GOOGLE_MAPS_GEOCODING_API_KEY = process.env.GOOGLE_MAPS_GEOCODING_API_KEY; // .envファイルにAPIキーを保存
+const GOOGLE_MAPS_GEOLOCATION_API_KEY = process.env.GOOGLE_MAPS_GEOLOCATION_API_KEY; // .envファイルにAPIキーを保存
 
 // GETリクエストの処理
 export async function GET(request: Request) {
-    if (!GOOGLE_MAPS_GEOCODING_API_KEY) {
+    if (!GOOGLE_MAPS_GEOLOCATION_API_KEY) {
         return NextResponse.json({ error: 'API key is not set' }, { status: 500 });
     }
-    const apiUrl = 'https://www.googleapis.com/geolocation/v1/geolocate?key=' + GOOGLE_MAPS_GEOCODING_API_KEY;
+    const apiUrl = 'https://www.googleapis.com/geolocation/v1/geolocate?key=' + GOOGLE_MAPS_GEOLOCATION_API_KEY;
 
     try {
         // ユーザーの位置情報を取得
