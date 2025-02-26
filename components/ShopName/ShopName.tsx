@@ -4,7 +4,7 @@ interface ShopNameProps {
   shopName: string;
 }
 
-// 回答のボタン
+// お店の名前
 export default function ShopName(props: ShopNameProps) {
   return (
     <div className="m-1/2 p-10 mx-auto">
