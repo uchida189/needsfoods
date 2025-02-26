@@ -21,7 +21,8 @@ export async function GET(request: Request) {
 
         // エラーレスポンスの処理
         if (!response.ok) {
-            return NextResponse.json({ error: 'Failed to get user location' }, { status: response.status });
+            const errorData = await response.json();
+            return NextResponse.json({ error: 'Failed to get user location', details: errorData }, { status: response.status });
         }
         
         // レスポンスデータをJSON形式で返す
