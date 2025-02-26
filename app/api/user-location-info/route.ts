@@ -1,9 +1,9 @@
-import { NextRequest, NextResponse } from 'next/server';
+import { NextResponse } from 'next/server';
 
 const GOOGLE_MAPS_GEOLOCATION_API_KEY = process.env.GOOGLE_MAPS_GEOLOCATION_API_KEY; // .envファイルにAPIキーを保存
 
 // GETリクエストの処理
-export async function GET(request: Request) {
+export async function GET() {
     if (!GOOGLE_MAPS_GEOLOCATION_API_KEY) {
         return NextResponse.json({ error: 'API key is not set' }, { status: 500 });
     }
