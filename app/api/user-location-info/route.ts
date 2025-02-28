@@ -1,4 +1,4 @@
-import { NextRequest, NextResponse } from 'next/server';
+import { NextResponse } from 'next/server';
 
 const GOOGLE_MAPS_GEOLOCATION_API_KEY = process.env.GOOGLE_MAPS_GEOLOCATION_API_KEY; // .envファイルにAPIキーを保存
 
