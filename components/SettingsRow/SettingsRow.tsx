@@ -12,9 +12,9 @@ interface SettingsRowProps {
 
 export default function SettingsRow(props: SettingsRowProps) {
   return (
-    <div className='w-full py-2 flex flex-col items-center justify-center border-b-2 border-dashed border-white'>
+    <div className='w-full py-2 flex flex-col items-center justify-center gap-1 border-b border-dashed border-white'>
       <SettingsQuestion question={props.question} />
-      <div className='w-full flex justify-around'>
+      <div className='w-full px-4 flex justify-between'>
         {props.options.map((option) => (
           <SettingsSelectionButton
             key={option}
