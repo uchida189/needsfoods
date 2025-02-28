@@ -1,6 +1,7 @@
 "use client"
 import React,{useState} from "react";
 import IconButton from "@/components/IconButton/IconButton";
+import Menu from "../Menu/Menu";
 
 // ヘッダー
 export default function Header() {
@@ -22,6 +23,7 @@ export default function Header() {
             {isMenuOpen&& <div>
                 <IconButton func="close" icon="./IoClose.svg" onClick={ToggleMenu}/>
                 {/*ここにメニューコンポーネントを入れたい*/}
+                <Menu/>
             </div>
             }
         </div>
