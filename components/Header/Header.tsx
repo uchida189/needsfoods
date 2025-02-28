@@ -5,19 +5,23 @@ import IconButton from "@/components/IconButton/IconButton";
 // ヘッダー
 export default function Header() {
     const [isMenuOpen, setOpenMenu] = useState(false);
-
+    let SettingState="visible";
     function ToggleMenu(){
         setOpenMenu(!isMenuOpen);
     }
     if(isMenuOpen){
-
+        SettingState="hidden";
+    }
+    else{
+        SettingState="visible";
     }
     return (
         <div>
-            <div className={'{$isMenuOpen? "flex" : "hidden"}'}><IconButton  func="menu" icon="./IoSettings.svg" onClick={ToggleMenu}/>
+            <div className={SettingState}><IconButton  func="menu" icon="./IoSettings.svg" onClick={ToggleMenu}/>
             </div>
             {isMenuOpen&& <div>
                 <IconButton func="close" icon="./IoClose.svg" onClick={ToggleMenu}/>
+                {/*ここにメニューコンポーネントを入れたい*/}
             </div>
             }
         </div>
