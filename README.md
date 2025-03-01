@@ -1,5 +1,5 @@
 # NeedsFoods
-![](public/readme-images/NeedsFoods-thumbnail.png)
+![](readme-images/NeedsFoods-thumbnail.png)
 
 
 ### 背景
@@ -32,7 +32,7 @@
 - 「外食に行きたい」から「来店」までを一貫してサポート
 
 ## システム構成図
-![](public/readme-images/NeedsFoods-system-configration.png)
+![](readme-images/NeedsFoods-system-configration.png)
 
 ## 動作手順
 
