@@ -123,9 +123,9 @@ export default function Result() {
                 <div className="m-1 w-full">
                     <div className="m-1 flex flex-row">
                         <ShopGoingTime transportation="徒歩" goingtime="5"/>
-                        <ShopBudget budget=""/>
+                        <ShopBudget budget="=1000"/>
                     </div>
-                    <ShopOpeningHours lunch="" dinner=""/>
+                    <ShopOpeningHours lunch="10:00~12:00" dinner="17:00~22:00"/>
                 </div>
                 <MapButton onClick={MapOpen}/>
             </div>
