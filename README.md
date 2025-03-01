@@ -1,6 +1,17 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# NeedsFoods
+![](public/readme-images/NeedsFoods-thumbnail.png)
 
-## Getting Startedd
+## 概要
+
+## 特徴
+- 質問に答えるだけで、お店の提案をしてくれる
+- スマホユーザー向けの簡単なUI
+- 「外食に行きたい」から「来店」までを一貫してサポート
+
+## システム構成図
+![](public/readme-images/NeedsFoods-system-configration.png)
+
+## Getting Started
 
 First, run the development server:
 
